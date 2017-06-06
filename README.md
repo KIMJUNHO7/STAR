@@ -1,10 +1,11 @@
 별글, 별말
 ===
+별글, 별말_학생부종합전형 관리를 위한 학생-강사 매칭 서비스 플랫폼 개발
 
 #0. requirements
 
-- python
-- postrgesql
+- python 3.6.0+
+- postrgesql 9.0+
 -node(npm), bower, gulp
 
 # Front-end
@@ -58,3 +59,17 @@
 
 - python byul/manage.py runserver (django 테스트서버) 차후 nginx + gunicorn
 
+
+# 기타 확인 사항 
+
+## 1. 깃 브랜치 전략
+- gitflow 전략(https://datasift.github.io/gitflow/IntroducingGitFlow.html)
+- master(최종 배포), develop(개발), django-feature/{feature_info}, front-feature/{feature_info}, hitfix, bugfix ... relese 사용안하고 develop에 tag
+
+## 2. 커밋 메시지 관련
+- https://chris.beams.io/posts/git-commit/
+- 첫글자는 대문자로(ex : Init, Fix, Update, etc...)
+- how 보단, what and why 를 기록
+
+## lint 관련
+- flake8
