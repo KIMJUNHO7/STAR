@@ -6,7 +6,7 @@
 
 - python 3.6.0+
 - postrgesql 9.0+
--node(npm), bower, gulp
+- node(npm), bower, gulp
 
 # Front-end
 
