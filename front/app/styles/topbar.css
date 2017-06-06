@@ -1,0 +1,58 @@
+#topbar {
+  width: 100%;
+  height: auto;
+  position: fixed;
+  z-index: 99999;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  overflow-y: hidden;
+  transition: 0.3s;
+  -webkit-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  transform: translateY(-100%)
+}
+#topbar.active {
+  -webkit-transform: translateY(0);
+  -ms-transform: translateY(0);
+  transform: translateY(0)
+}
+
+.topbar-wrapper {
+  margin: 20px;
+  overflow: auto;
+}
+.topbar-wrapper .header {
+  position: relative;
+  margin-bottom: 50px;
+}
+.topbar-wrapper .close-btn {
+  width: 45px;
+  height: 45px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #fff url(../images/close-up.png) no-repeat center center;
+  cursor: pointer;
+}
+
+.topbar-wrapper .selectors {
+  margin-bottom: 20px;
+}
+.topbar-wrapper .selectors .form-group {
+  padding: 5px;
+}
+.topbar-wrapper .selectors select.form-control {
+  font-weight: bold;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+}
+
+.topbar-wrapper .btn-wrapper {
+  margin: 5px;
+}
+.topbar-wrapper .btn {
+  width: auto;
+  padding-left: 30px;
+  padding-right: 30px;
+  float: right;
+}

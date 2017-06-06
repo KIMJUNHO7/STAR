@@ -1,0 +1,2 @@
+-r production.txt
+ipython==6.1.0

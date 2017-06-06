@@ -1,0 +1,24 @@
+# Created by https://www.gitignore.io/api/node,macos,python
+
+*.DS_Store
+
+
+### Node ###
+logs
+*.log
+npm-debug.log*
+node_modules/
+bower_components/
+.tmp/
+dist/
+
+
+# dotenv environment variables file
+.env
+
+
+### Python ###
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class

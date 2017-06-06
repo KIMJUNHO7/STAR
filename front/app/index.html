@@ -1,0 +1,772 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#227e72">
+    <title>별글, 별말</title>
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- build:css styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/normalize-css/normalize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+
+    <!-- build:css styles/styles.css --> 
+    <link rel="stylesheet" href="styles/font.css">
+    <link rel="stylesheet" href="styles/grid.css">
+    <link rel="stylesheet" href="styles/styles.css">
+    <link rel="stylesheet" href="styles/header.css">
+    <link rel="stylesheet" href="styles/footer.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="stylesheet" href="styles/sidenav.css">
+    <link rel="stylesheet" href="styles/topbar.css">
+
+    <link rel="stylesheet" href="styles/modal-detail.css">
+    <link rel="stylesheet" href="styles/modal-signup.css">
+    <link rel="stylesheet" href="styles/modal-signin.css">
+    <!-- endbuild -->
+    
+  </head>
+  <body>
+    <!--[if IE]>
+      <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!-- #wrapper -->
+    <div id="wrapper" class="wrapper">
+      <!-- header -->
+      <header>
+        <div class="block header-top">
+          <div class="container">
+            <ul class="inline">
+              <li><a href="#">공지사항</a></li>
+              <li><a href="#" data-modal="signin">로그인</a></li>
+              <li><a href="#" data-modal="signup-step1">회원가입</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <nav class="navbar">
+          <div class="container-mobile-full">
+            <a class="nav-btn" id="nav-btn">
+              <span></span>
+              <span></span>
+              <span></span>
+            </a>
+            <div class="sub-container logo">
+              <a routerLink="/" class="main-logo"><img class="logo" src="images/logo2.png" /></a>
+            </div>
+            <div class="sub-container nav">
+              <ul class="main-nav">
+                <li><a class="active" href="#">강사진 찾기</a></li>
+                <li><a href="#">전화&amp;화상 서비스</a></li>
+                <li><a href="#">자기소개서 구매</a></li>
+                <li><a href="#">마이페이지</a></li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+
+        <!-- banner search -->
+        <div class="block header-search">
+          <div class="container">
+            <div class="banner-text">
+              <h1>나만의 1:1 맞춤형 전략 컨설팅,</h1>
+              <h2>원하는 학교와 원하는 강사를 직접 선택하세요.</h2>
+            </div>
+            
+            <div class="form-area">
+              <form>
+                <div class="row">
+                  <div class="w-40">
+                    <div class="form-group">
+                      <label>대학교</label>
+                      <select class="form-control" id="school" name="school" required>
+                        <option value="" disabled="true">대학교 선택</option>
+                        <option>서울대학교</option>
+                        <option>서울대학교</option>
+                        <option>서울대학교</option>
+                        <option>서울대학교</option>
+                        <option>서울대학교</option>
+                        <option>서울대학교</option>
+                        <option>서울대학교ㄴㅁㅇㄴㅇㅁㅇㄴㅁㅇ</option>
+                        <option>서울대학교</option>
+                        <option>서울대학교</option>
+                        <option>서울대학교</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="w-20">
+                    <div class="form-group">
+                      <label>학년</label>
+                      <select class="form-control" id="school" name="school" required>
+                        <option value="" disabled="true">학년 선택</option>
+                        <option value="">1학년</option>
+                        <option value="">2학년</option>
+                        <option value="">3학년</option>
+                        <option value="">4학년</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="w-30">
+                    <div class="form-group">
+                      <label>학과</label>
+                      <select class="form-control" id="school" name="school" required>
+                        <option value="" disabled="true">학과 선택</option>
+                        <option value="">컴퓨터공학과</option>
+                        <option value="">컴퓨터공학과</option>
+                        <option value="">컴퓨터공학과</option>
+                        <option value="">컴퓨터공학과</option>
+                        <option value="">컴퓨터공학과</option>
+                        <option value="">컴퓨터공학과</option>
+                        <option value="">컴퓨터공학과</option>
+                        <option value="">컴퓨터공학과</option>
+                      </select>
+                    </div>
+                  </div>
+                  <br class="form-br" />
+                  <div class="w-30">
+                    <div class="form-group">
+                      <label>컨설팅 희망 지역</label>
+                      <select class="form-control" id="school" name="school" required>
+                        <option value="" disabled="true">지역 선택</option>
+                        <option value="">서울</option>
+                        <option value="">서울</option>
+                        <option value="">서울</option>
+                        <option value="">서울</option>
+                        <option value="">서울</option>
+                        <option value="">서울</option>
+                        <option value="">서울</option>
+                        <option value="">서울</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="w-30">
+                    <div class="form-group">
+                    <label>출신 고등학교</label>
+                      <select class="form-control" id="school" name="school" required>
+                        <option value="" disabled="true">출신 학교 선택</option>
+                        <option value="">신성고등학교</option>
+                        <option value="">신성고등학교</option>
+                        <option value="">신성고등학교</option>
+                        <option value="">신성고등학교</option>
+                        <option value="">신성고등학교</option>
+                        <option value="">신성고등학교</option>
+                        <option value="">신성고등학교</option>
+                        <option value="">신성고등학교</option>
+                        <option value="">신성고등학교</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="w-20">
+                    <div class="form-group">
+                    <label>평균 내신</label>
+                      <select class="form-control" id="school" name="school" required>
+                        <option value="" disabled="true">내신 선택</option>
+                        <option value="">1-2등급</option>
+                        <option value="">1-2등급</option>
+                        <option value="">1-2등급</option>
+                        <option value="">1-2등급</option>
+                        <option value="">1-2등급</option>
+                        <option value="">1-2등급</option>
+                        <option value="">1-2등급</option>
+                      </select>
+                    </div>
+                  </div>
+                  <div class="w-20 submit-btn-area">
+                    <button type="submit" class="btn">강사진 찾기</button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <!-- //banner search -->
+      </header>
+      <!-- //header -->
+
+      <!-- main -->
+      <main class="list">
+        <!-- grid list -->
+        <div class="block">
+          <div class="container">
+            
+            <div class="search-area">
+              <button id="topbar-btn" class="btn search">학교,학년,학과,지역,출신고,내신</button>
+              <div>
+                <select class="form-control filter">
+                  <option value="">프리미엄</option>
+                </select>
+              </div>
+              <div class="clearfix"></div>
+            </div>
+
+            <div class="grid">
+              <!-- .grid.item -->
+              <div class="grid-item">
+                <div class="box">
+                  <div class="white-bg"></div>
+                  <a href="#" class="wish on"></a>
+                  <div class="emblem">
+                    <img src="images/school-logo.png" />
+                  </div>
+                  <div class="info">
+                    <div class="default">
+                      <h2>단국대학교</h2>
+                      <h3>09학번 지0욱</h3>
+                    </div>
+                    <div class="hover">
+                      <h2>1.5등급</h2>
+                      <h3>신성고</h3>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <div class="w-60">
+                      <a class="btn detail" href="#" data-modal="detail">자세히보기</a>
+                    </div>
+                    <div class="w-40">
+                      <div class="btn-wrap">
+                        <a class="btn like" href="#">10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //.grid.item -->
+              <!-- .grid.item -->
+              <div class="grid-item">
+                <div class="box">
+                  <div class="white-bg"></div>
+                  <a href="#" class="wish on"></a>
+                  <div class="emblem">
+                    <img src="images/school-logo.png" />
+                  </div>
+                  <div class="info">
+                    <div class="default">
+                      <h2>단국대학교</h2>
+                      <h3>09학번 지0욱</h3>
+                    </div>
+                    <div class="hover">
+                      <h2>1.5등급</h2>
+                      <h3>신성고</h3>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <div class="w-60">
+                      <a class="btn detail" href="#" data-modal="detail">자세히보기</a>
+                    </div>
+                    <div class="w-40">
+                      <div class="btn-wrap">
+                        <a class="btn like" href="#">10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //.grid.item -->
+              <!-- .grid.item -->
+              <div class="grid-item">
+                <div class="box">
+                  <div class="white-bg"></div>
+                  <a href="#" class="wish on"></a>
+                  <div class="emblem">
+                    <img src="images/school-logo.png" />
+                  </div>
+                  <div class="info">
+                    <div class="default">
+                      <h2>단국대학교</h2>
+                      <h3>09학번 지0욱</h3>
+                    </div>
+                    <div class="hover">
+                      <h2>1.5등급</h2>
+                      <h3>신성고</h3>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <div class="w-60">
+                      <a class="btn detail" href="#" data-modal="detail">자세히보기</a>
+                    </div>
+                    <div class="w-40">
+                      <div class="btn-wrap">
+                        <a class="btn like" href="#">10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //.grid.item -->
+              <!-- .grid.item -->
+              <div class="grid-item">
+                <div class="box">
+                  <div class="white-bg"></div>
+                  <a href="#" class="wish on"></a>
+                  <div class="emblem">
+                    <img src="images/school-logo.png" />
+                  </div>
+                  <div class="info">
+                    <div class="default">
+                      <h2>단국대학교</h2>
+                      <h3>09학번 지0욱</h3>
+                    </div>
+                    <div class="hover">
+                      <h2>1.5등급</h2>
+                      <h3>신성고</h3>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <div class="w-60">
+                      <a class="btn detail" href="#" data-modal="detail">자세히보기</a>
+                    </div>
+                    <div class="w-40">
+                      <div class="btn-wrap">
+                        <a class="btn like" href="#">10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //.grid.item -->
+              <!-- .grid.item -->
+              <div class="grid-item">
+                <div class="box">
+                  <div class="white-bg"></div>
+                  <a href="#" class="wish on"></a>
+                  <div class="emblem">
+                    <img src="images/school-logo.png" />
+                  </div>
+                  <div class="info">
+                    <div class="default">
+                      <h2>단국대학교</h2>
+                      <h3>09학번 지0욱</h3>
+                    </div>
+                    <div class="hover">
+                      <h2>1.5등급</h2>
+                      <h3>신성고</h3>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <div class="w-60">
+                      <a class="btn detail" href="#" data-modal="detail">자세히보기</a>
+                    </div>
+                    <div class="w-40">
+                      <div class="btn-wrap">
+                        <a class="btn like" href="#">10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //.grid.item -->
+              <!-- .grid.item -->
+              <div class="grid-item">
+                <div class="box">
+                  <div class="white-bg"></div>
+                  <a href="#" class="wish on"></a>
+                  <div class="emblem">
+                    <img src="images/school-logo.png" />
+                  </div>
+                  <div class="info">
+                    <div class="default">
+                      <h2>단국대학교</h2>
+                      <h3>09학번 지0욱</h3>
+                    </div>
+                    <div class="hover">
+                      <h2>1.5등급</h2>
+                      <h3>신성고</h3>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <div class="w-60">
+                      <a class="btn detail" href="#" data-modal="detail">자세히보기</a>
+                    </div>
+                    <div class="w-40">
+                      <div class="btn-wrap">
+                        <a class="btn like" href="#">10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //.grid.item -->
+              <!-- .grid.item -->
+              <div class="grid-item">
+                <div class="box">
+                  <div class="white-bg"></div>
+                  <a href="#" class="wish on"></a>
+                  <div class="emblem">
+                    <img src="images/school-logo.png" />
+                  </div>
+                  <div class="info">
+                    <div class="default">
+                      <h2>단국대학교</h2>
+                      <h3>09학번 지0욱</h3>
+                    </div>
+                    <div class="hover">
+                      <h2>1.5등급</h2>
+                      <h3>신성고</h3>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <div class="w-60">
+                      <a class="btn detail" href="#" data-modal="detail">자세히보기</a>
+                    </div>
+                    <div class="w-40">
+                      <div class="btn-wrap">
+                        <a class="btn like" href="#">10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //.grid.item -->
+              <!-- .grid.item -->
+              <div class="grid-item">
+                <div class="box">
+                  <div class="white-bg"></div>
+                  <a href="#" class="wish on"></a>
+                  <div class="emblem">
+                    <img src="images/school-logo.png" />
+                  </div>
+                  <div class="info">
+                    <div class="default">
+                      <h2>단국대학교</h2>
+                      <h3>09학번 지0욱</h3>
+                    </div>
+                    <div class="hover">
+                      <h2>1.5등급</h2>
+                      <h3>신성고</h3>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <div class="w-60">
+                      <a class="btn detail" href="#" data-modal="detail">자세히보기</a>
+                    </div>
+                    <div class="w-40">
+                      <div class="btn-wrap">
+                        <a class="btn like" href="#">10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //.grid.item -->
+              <!-- .grid.item -->
+              <div class="grid-item">
+                <div class="box">
+                  <div class="white-bg"></div>
+                  <a href="#" class="wish on"></a>
+                  <div class="emblem">
+                    <img src="images/school-logo.png" />
+                  </div>
+                  <div class="info">
+                    <div class="default">
+                      <h2>단국대학교</h2>
+                      <h3>09학번 지0욱</h3>
+                    </div>
+                    <div class="hover">
+                      <h2>1.5등급</h2>
+                      <h3>신성고</h3>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <div class="w-60">
+                      <a class="btn detail" href="#" data-modal="detail">자세히보기</a>
+                    </div>
+                    <div class="w-40">
+                      <div class="btn-wrap">
+                        <a class="btn like" href="#">10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //.grid.item -->
+              <!-- .grid.item -->
+              <div class="grid-item">
+                <div class="box">
+                  <div class="white-bg"></div>
+                  <a href="#" class="wish on"></a>
+                  <div class="emblem">
+                    <img src="images/school-logo.png" />
+                  </div>
+                  <div class="info">
+                    <div class="default">
+                      <h2>단국대학교</h2>
+                      <h3>09학번 지0욱</h3>
+                    </div>
+                    <div class="hover">
+                      <h2>1.5등급</h2>
+                      <h3>신성고</h3>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <div class="w-60">
+                      <a class="btn detail" href="#" data-modal="detail">자세히보기</a>
+                    </div>
+                    <div class="w-40">
+                      <div class="btn-wrap">
+                        <a class="btn like" href="#">10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //.grid.item -->
+              <!-- .grid.item -->
+              <div class="grid-item">
+                <div class="box">
+                  <div class="white-bg"></div>
+                  <a href="#" class="wish on"></a>
+                  <div class="emblem">
+                    <img src="images/school-logo.png" />
+                  </div>
+                  <div class="info">
+                    <div class="default">
+                      <h2>단국대학교</h2>
+                      <h3>09학번 지0욱</h3>
+                    </div>
+                    <div class="hover">
+                      <h2>1.5등급</h2>
+                      <h3>신성고</h3>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <div class="w-60">
+                      <a class="btn detail" href="#" data-modal="detail">자세히보기</a>
+                    </div>
+                    <div class="w-40">
+                      <div class="btn-wrap">
+                        <a class="btn like" href="#">10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //.grid.item -->
+              <!-- .grid.item -->
+              <div class="grid-item">
+                <div class="box">
+                  <div class="white-bg"></div>
+                  <a href="#" class="wish on"></a>
+                  <div class="emblem">
+                    <img src="images/school-logo.png" />
+                  </div>
+                  <div class="info">
+                    <div class="default">
+                      <h2>단국대학교</h2>
+                      <h3>09학번 지0욱</h3>
+                    </div>
+                    <div class="hover">
+                      <h2>1.5등급</h2>
+                      <h3>신성고</h3>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <div class="w-60">
+                      <a class="btn detail" href="#" data-modal="detail">자세히보기</a>
+                    </div>
+                    <div class="w-40">
+                      <div class="btn-wrap">
+                        <a class="btn like" href="#">10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //.grid.item -->
+              <!-- .grid.item -->
+              <div class="grid-item">
+                <div class="box">
+                  <div class="white-bg"></div>
+                  <a href="#" class="wish on"></a>
+                  <div class="emblem">
+                    <img src="images/school-logo.png" />
+                  </div>
+                  <div class="info">
+                    <div class="default">
+                      <h2>단국대학교</h2>
+                      <h3>09학번 지0욱</h3>
+                    </div>
+                    <div class="hover">
+                      <h2>1.5등급</h2>
+                      <h3>신성고</h3>
+                    </div>
+                  </div>
+                  <div class="btns">
+                    <div class="w-60">
+                      <a class="btn detail" href="#" data-modal="detail">자세히보기</a>
+                    </div>
+                    <div class="w-40">
+                      <div class="btn-wrap">
+                        <a class="btn like" href="#">10</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- //.grid.item -->
+
+            </div>
+          </div>
+        </div>
+        <!-- //grid list -->
+
+        <div class="block">
+          <div class="container">
+            <div class="list-btns">
+              <div class="btn-wrap">
+                <a class="btn btn-lg" href="#">&#43; 더보기</a>
+              </div>
+              <div class="btn-wrap">
+                <a class="btn btn-lg" href="#">별글 모아보기</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </main>
+      <!-- //main -->
+
+      <!-- footer -->
+      <footer>
+        <div class="block">
+          <div class="container">
+            <div class="footer-contents">
+              <div class="info-list">
+                <ul class="inline">
+                  <li>서울특별시 서초구 서초대로 243(서초동,서현빌딩)</li>
+                  <li>대표이사 김석배</li>
+                  <li>사업자등록번호 215-86-79670</li>
+                  <li>고객센터 02-540-5252</li>
+                  <li>팩스 02-416-2634</li>
+                </ul>
+                <ul class="inline">
+                  <li>개인정보관리책임자 유정안(skyedu@stunitas.com)</li>
+                  <li>통신판매업 제 2015-서울서초-1080호 정보확인</li>
+                </ul>
+              </div>
+              
+              <div class="link-list">
+                <ul class="inline">
+                  <li><a href="#">이용약관</a></li>
+                  <li class="accent"><a href="#">개인정보취급방침</a></li>
+                </ul>
+                <ul class="inline social">
+                  <li><a href="#"><img src="images/btn_fb.png" /></a></li>
+                  <li><a href="#"><img src="images/btn_insta.png" /></a></li>
+                  <li><a href="#"><img src="images/btn_ytb.png" /></a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <!-- //footer -->
+    </div>
+    <!-- //#wrapper -->
+
+    <!-- #sidenav -->
+    <div id="sidenav" class="sidenav">
+      <div class="side-wrapper">
+        <div class="header">
+          <img class="logo" src="images/logo2.png" />
+          <a id="close-nav-btn" class="close-btn" href="#">&times;</a>
+        </div>
+        <nav>
+          <ul>
+            <li><a href="#">강사진 찾기</a></li>
+            <li><a href="#">전화&amp; 서비스</a></li>
+            <li><a href="#">자기소개서 구매</a></li>
+            <li><a href="#">마이페이지</a></li>
+          </ul>
+        </nav>
+        <div class="btns">
+          <div class="w-50">
+            <a id="close-open-btn" class="btn" href="#">강사진 찾기</a>
+          </div>
+          <div class="w-50">
+            <a class="btn" href="#" data-modal="signup-step1">회원가입</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- //#sidebar -->
+    
+    <!-- #topbar -->
+    <div id="topbar" class="topbar">
+      <div class="topbar-wrapper">
+        <div class="header">
+          <div id="close-topbar-btn" class="close-btn"></div>
+        </div>
+        <div class="selectors">
+          <div class="form-group">
+            <select class="form-control">
+              <option value="">학교명 선택</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option value="">학년 선택</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option value="">학과 선택</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option value="">내신등급 선택</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option value="">컨설팅 희망 지역 선택</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option value="">출신 고등학교 선택</option>
+            </select>
+          </div>
+        </div>
+        <div class="btn-wrapper">
+          <button id="find-teacher-btn" class="btn">강사진 찾기</button>
+        </div>
+      </div>
+    </div>
+    <!-- //#topbar -->
+
+    <!-- #mask -->
+    <div id="mask"></div>
+    <!-- //#mask -->
+
+    <!-- #modal-wrap -->
+    <div id="modal-wrap"></div>
+    <!-- //#modal-wrap -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+
+    <!-- build:js scripts/vendor.js -->
+    <!-- bower:js -->
+    <script src="/bower_components/jquery/dist/jquery.js"></script>
+    <!-- endbower -->
+    <!-- endbuild -->
+    
+    <!-- build:js scripts/main.js -->
+    <script src="scripts/main.js"></script>
+    <!-- endbuild -->
+  </body>
+</html>

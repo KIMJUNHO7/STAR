@@ -1,0 +1,130 @@
+.modal-signin {
+  background-color: #fff;
+  position: relative;
+  margin: 30px;
+  padding: 0 15px 15px;
+  overflow: visible;
+}
+.modal-signin .modal-header {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.modal-signin .close-wrap {
+  height: 60px;
+  margin-left: -15px;
+  margin-right: -15px;
+  background: #80c2c9;
+  position: relative;
+  margin-bottom: 30px;
+}
+@media (min-width: 992px) {
+  .modal-signin {
+    margin: 120px auto;
+    padding: 0 50px 50px;
+    width: 950px;
+  }
+  .modal-signin .close-wrap {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+}
+.modal-signin .close-wrap > .close-btn {
+  font-size: 50px;
+  color: #fff;
+  position: absolute;
+  right: 15px;
+}
+.modal-signin img.logo {
+  display: inline-block;
+}
+
+.modal-signin .signin-types {
+  margin-left: -20px;
+  margin-right: -20px;
+}
+.modal-signin .signin-types > .type {
+  padding: 30px;
+  position: relative;
+}
+.modal-signin .signin-types > .type.social {
+  border-top: 1px solid #ddd;
+  border-left: none;
+}
+.modal-signin .signin-types > .type.social:before {
+  content: "OR";
+  position: absolute;
+  top: -15px;
+  left: 50%;
+  width: 30px;
+  border: 1px solid #ddd;
+  background-color: #fff;
+  color: #ddd;
+  font-size: 10px;
+  font-weight: bold;
+  border-radius: 50%;
+  padding: 9px 7px;
+  margin-left: -20px;
+}
+@media (min-width: 992px) {
+  .modal-signin .signin-types > .type {
+    float: left;
+    width: 50%;
+  }
+  .modal-signin .signin-types > .type.social {
+    border-left: 1px solid #ddd;
+    border-top: none;
+  }
+  .modal-signin .signin-types > .type.social:before {
+    top: 50%;
+    left: 5px;
+  }
+}
+
+.modal-signin .form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+.modal-signin .form-group > label {
+  font-weight: bold;
+  color: #727272;
+  display: inline-block;
+  max-width: 100%;
+  margin-bottom: 5px;
+}
+.modal-signin .form-group > input {
+  display: block;
+}
+.modal-signin .btns {
+  margin-bottom: 20px;
+}
+.modal-signin .btns > .btn {
+  width: auto;
+  padding: 10px 30px;
+  background-color: #80c2c9;
+}
+
+.modal-signin .type.social > h3 {
+  color: #80c2c9;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.modal-signin .type.social .btn.social {
+  border-radius: 10px;
+  margin-bottom: 20px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 23px;
+}
+.modal-signin .type.social .btn.social.facebook {
+  background-color: #3b56a1;
+  background-image: url(../images/facebook.png);
+}
+.modal-signin .type.social .btn.social.twitter {
+  background-color: #1da0f3;
+  background-image: url(../images/twitter.png);
+}
+.modal-signin .type.social .btn.social.google {
+  background-color: #e24932;
+  background-image: url(../images/google.png);
+}

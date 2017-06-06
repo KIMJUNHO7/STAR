@@ -1,0 +1,12 @@
+{
+  "name": "byul",
+  "private": true,
+  "dependencies": {
+    "normalize-css": "^7.0.0",
+    "jquery": "^3.2.1"
+  },
+  "devDependencies": {
+    "chai": "^4.0.1",
+    "mocha": "^3.4.2"
+  }
+}

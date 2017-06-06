@@ -1,0 +1,208 @@
+
+main.list {
+  background: #97ccc5;
+  background: -webkit-linear-gradient(#f1f1b9, #97ccc5);
+  background: -o-linear-gradient(#f1f1b9, #97ccc5);
+  background: -moz-linear-gradient(#f1f1b9, #97ccc5);
+  background: linear-gradient(#f1f1b9, #97ccc5);
+  border-bottom: #ddd;
+  padding-bottom: 30px;
+}
+
+main.list .search-area {
+  margin: 20px 0;
+}
+main.list .btn.search {
+  height: 55px;
+  color: #444;
+  font-weight: normal;
+  background: #fff url(../images/m-search.png) no-repeat 20px center;
+  background-size: 20px;
+  box-shadow: 2px 2px 2px rgba(0,0,0,0.2);
+  overflow: hidden;
+  border: 0;
+  margin-bottom: 20px;
+}
+main.list .btn.search:hover, .block.list .btn.search:active {
+  background-color: #ddd;
+}
+@media (min-width: 992px) {
+  main.list .btn.search {
+    display: none;
+  }
+}
+
+main.list .form-control.filter {
+  width: 160px;
+  border-radius: 20px;
+  color: #97ccc5;
+  float: right;
+}
+
+main.list .grid {
+  margin-top: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+
+.grid > .grid-item {
+  float: left;
+  width: 50%;
+  padding: 0 15px;
+}
+@media (min-width: 992px) {
+  .grid > .grid-item {
+    width: 25%;
+  }
+}
+
+.grid-item > .box {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 15px;
+  position: relative;
+}
+.grid-item > .box > a.wish {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 2001;
+  width: 24px;
+  height: 24px;
+  background: url(../images/star.png) no-repeat center center;
+  background-size: 24px;
+}
+.grid-item > .box > a.wish.on {
+  background: url(../images/star-1.png) no-repeat center center;
+  background-size: 24px;
+}
+.grid-item > .box > a.wish:hover {
+  opacity: .5;
+}
+
+.grid-item > .box > .emblem {
+  z-index: 2002;
+  position: relative;
+}
+.grid-item > .box > .emblem > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background: #fff;
+  border-radius: 50%;
+  border: 2px solid #fff;
+}
+
+.grid-item > .box > .info {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  position: relative;
+}
+.grid-item > .box > .info h2 {
+  margin-bottom: 10px;
+  font-size: 18px;
+
+}
+.grid-item > .box > .info h3 {
+  margin: 0;
+  font-size: 16px;
+  color: #727272;
+}
+@media (min-width: 992px) {
+  .grid-item > .box > .info h2 {
+    font-size: 20px;
+
+  }
+  .grid-item > .box > .info h3 {
+    font-size: 18px;
+  }
+}
+
+.grid-item > .box > .info .hover {
+  display: none;
+}
+.grid-item > .box > .info .hover h3 {
+  color: #227e72;
+}
+
+.grid-item > .box > .btns {
+  display: inline-block;
+  position: relative;
+  width: 100%;
+
+}
+.grid-item > .box > .btns > .w-60 {
+  width: 100%;
+  margin-bottom: 15px;
+}
+.grid-item > .box > .btns > .w-40 {
+  width: 100%;
+}
+.grid-item > .box > .btns .btn.like {
+  border: 1px solid #ddd;
+  color: #444;
+  background-color: #fff;
+  background-image: url(../images/like-black.png);
+  background-repeat: no-repeat;
+  background-position: 10px center;
+  background-size: 15px;
+  padding-left: 20px;
+}
+.grid-item > .box > .btns .btn.like:hover {
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #97ccc5;
+  background-image: url(../images/like-white.png);
+  background-size: 15px;
+}
+@media (min-width: 992px) {
+  .grid-item > .box > .btns > .w-60 {
+    float: left;
+    width: 60%;
+  }
+  .grid-item > .box > .btns > .w-40 {
+    float: left;
+    width: 40%;
+  }
+  .grid-item > .box > .btns > .w-40 .btn-wrap {
+    margin-left: 15px;
+  }
+}
+
+.grid-item > .box .white-bg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: #fff;
+  height: 60%;
+  margin: 5px;
+  z-index: 0;
+}
+
+.grid-item:hover > .box .white-bg {
+  background: #97ccc5;
+  -webkit-transition: background-color 0.5s linear;
+  -ms-transition: background-color 0.5s linear;
+  transition: background-color 0.5s linear;
+}
+.grid-item:hover > .box > .info .default {
+  display: none;
+}
+.grid-item:hover > .box > .info .hover {
+  display: block;
+}
+
+main.list .list-btns {
+  margin-top: 10px;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-bottom: 30px;
+}
+
+main .list-btns .btn-wrap {
+  float: left;
+  width: 50%;
+  padding: 0 15px;
+}

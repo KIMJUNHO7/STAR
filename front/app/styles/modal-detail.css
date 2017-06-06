@@ -1,0 +1,452 @@
+.detail-modal {
+  background-color: #fff;
+  position: relative;
+  margin: 30px;
+  padding: 15px;
+  overflow: visible;
+}
+@media (min-width: 992px) {
+  .detail-modal {
+    margin: 120px auto;
+    padding: 50px;
+    width: 950px;
+  }
+}
+
+.detail-modal .modal-header .modal-logo {
+  float: left;
+}
+.detail-modal .modal-header .title {
+  float: left;
+  border-left: 5px solid #227e72;
+  height: 72px;
+  margin-left: 20px;
+  padding-left: 10px;
+  padding-top: 35px;
+}
+.detail-modal .modal-header h2 {
+  margin: 0;
+  vertical-align: bottom;
+  color: #227e72;
+  font-size: 20px;
+}
+.detail-modal .modal-header h5 {
+  margin: 0;
+  vertical-align: bottom;
+  color: #ddd;
+}
+.detail-modal .modal-header .close-btn {
+  font-size: 50px;
+  color: #227e72;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+@media (min-width: 992px) {
+  .detail-modal .modal-header .close-btn {
+    top: 50px;
+    right: 50px;
+  }
+}
+
+.detail-modal .modal-body {
+  padding-top: 20px;
+}
+.detail-modal .modal-body .image-box {
+  position: relative;
+  text-align: center;
+}
+
+.detail-modal .modal-body .circle {
+  position: relative;
+  display: inline-block;
+  margin: 2em 0;
+  text-align: center;
+  width: 55%;
+}
+.detail-modal .modal-body .circle:after {
+  display: block;
+  padding-bottom: 100%;
+  width: 100%;
+  height: 0;
+  border-radius: 50%;
+  border: 1px solid #227e72;
+  content: "";
+}
+.detail-modal .modal-body .circle-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+.detail-modal .modal-body .circle-inner img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  padding: 15px;
+  border-radius: 50%;
+}
+.detail-modal .modal-body .circle-inner .play {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  border-radius: 50%;
+  border: 15px solid transparent;
+  background: rgba(0,0,0,0.5) url(../images/play.png) no-repeat center center;
+  background-size: 50px;
+  background-clip: padding-box;
+  -moz-background-clip: padding-box;
+  -webkit-background-clip: padding-box;
+  visibility: hidden;
+}
+.detail-modal .modal-body .circle-inner:hover .play {
+  visibility: visible;
+}
+
+.detail-modal .modal-body .image-box .arrow {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  margin-top: -25px;
+}
+.detail-modal .modal-body .image-box .arrow.arrow-left {
+  background: url(../images/spimg2.png) no-repeat center center;
+  left: 0;
+}
+.detail-modal .modal-body .image-box .arrow.arrow-right {
+  background: url(../images/spimg1.png) no-repeat center center;
+  right: 0;
+}
+
+.detail-modal .modal-body .info {
+  text-align: center;
+}
+.detail-modal .modal-body .info > h2 {
+  font-size: 20px;
+  vertical-align: middle;
+  margin: 0;
+  display: inline-block;
+}
+.detail-modal .modal-body .info > .star {
+  background: url(../images/star.png) no-repeat center center;
+  background-size: 20px;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  display: inline-block;
+}
+.detail-modal .modal-body .info > .star.on {
+  background: url(../images/star-1.png) no-repeat center center;
+  background-size: 20px;
+}
+.detail-modal .modal-body .info > h3 {
+  font-size: 15px;
+  color: #727272;
+  margin: 5px 0 0 0;
+}
+@media (min-width: 992px) {
+  .detail-modal .modal-body .info > h2 {
+    font-size: 25px;
+  }
+  .detail-modal .modal-body .info > .star {
+    background: url(../images/star.png) no-repeat center center;
+    background-size: 25px;
+    width: 25px;
+    height: 25px;
+  }
+  .detail-modal .modal-body .info > .star.on {
+    background: url(../images/star-1.png) no-repeat center center;
+    background-size: 25px;
+  }
+  .detail-modal .modal-body .info > h3 {
+    font-size: 20px;
+  }
+}
+
+.detail-modal .modal-body .profile-btns .btn-wrap {
+  width: 50%;
+  display: block;
+  float: left;
+  padding: 10px;
+}
+@media (min-width: 992px) {
+  .detail-modal .modal-body .profile-btns .btn-wrap {
+    width: 25%;
+  }
+}
+.detail-modal .modal-body .profile-btns .btn-wrap .btn {
+  height: 50px;
+  line-height: 2.2;
+  background: #80c2c9;
+}
+
+.detail-modal .modal-body .bg-wave {
+  height: 161px;
+  background: url(../images/bg-wave.png) repeat-x center center;
+  margin-left: -15px;
+  margin-right: -15px;
+  margin-top: 50px;
+}
+
+.detail-modal .modal-body .detail {
+  background-color: #80c2c9;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.detail-modal .modal-body .detail-wrapper {
+  padding-left: 15px;
+  padding-right: 15px;
+}
+@media (min-width: 992px) {
+  .detail-modal .modal-body .bg-wave {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+  .detail-modal .modal-body .detail {
+    margin-left: -50px;
+    margin-right: -50px;
+  }
+  .detail-modal .modal-body .detail-wrapper {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+.detail-modal .modal-body .detail .detail-title {
+  position: relative;
+  border-bottom: 1px solid #fff;
+  padding-top: 5px;
+  margin-bottom: 5px;
+}
+.detail-modal .modal-body .detail .detail-title h2 {
+  font-size: 25px;
+  color: #fff;
+  margin: 0;
+  height: 40px;
+}
+.detail-modal .modal-body .detail-title .medals {
+  position: absolute;
+  bottom: 5px;
+  right: 0;
+}
+.detail-modal .modal-body .detail-title .medal {
+  width: 20px;
+  height: 30px;
+  display: inline-block;
+  background-size: 20px 30px;
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+
+/** Medal icon **/
+.detail-modal .modal-body .detail-title .medal.platinum {
+  background-image: url(../images/medal-p40.png);
+}
+.detail-modal .modal-body .detail-title .medal.gold {
+  background-image: url(../images/medal-g40.png);
+}
+.detail-modal .modal-body .detail-title .medal.silver {
+  background-image: url(../images/medal-s40.png);
+}
+.detail-modal .modal-body .detail-title .medal.bronze {
+  background-image: url(../images/medal-b40.png);
+}
+.detail-modal .modal-body .detail-title .medal.platinum.on {
+  background-image: url(../images/medal-p.png);
+}
+.detail-modal .modal-body .detail-title .medal.gold.on {
+  background-image: url(../images/medal-g.png);
+}
+.detail-modal .modal-body .detail-title .medal.silver.on {
+  background-image: url(../images/medal-s.png);
+}
+.detail-modal .modal-body .detail-title .medal.bronze.on {
+  background-image: url(../images/medal-b.png);
+}
+
+.detail-modal .modal-body dl.detail-profile {
+  margin-bottom: 30px;
+  display: inline-block;
+}
+.detail-modal .modal-body dl.detail-profile dt {
+  font-size: 18px;
+  float: none;;
+  width: 170px;
+  overflow: hidden;
+  clear: left;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.detail-modal .modal-body dl.detail-profile dt:before {
+  content: "◆";
+  padding-right: 10px;
+  font-size: 10px;
+  vertical-align: middle;
+  margin: 0;
+}
+.detail-modal .modal-body dl.detail-profile dd {
+  font-size: 16px;
+  margin-left: 20px;
+  margin-bottom: 10px;
+  color: #fff;
+}
+.detail-modal .modal-body dl.detail-profile span.grade {
+  color: #fff;
+  border: 1px solid #fff;
+  border-radius: 20px;
+  padding: 1px 10px;
+  display: inline-block;
+  font-size: 10px;
+}
+.detail-modal .modal-body dl.detail-profile h3.record {
+  font-size: 15px;
+  font-weight: normal;
+  color: #fff;
+  margin: 0 0 10px 0;
+}
+.detail-modal .modal-body dl.detail-profile h3.record:after {
+  content: "합격";
+  padding-left: 5px;
+  font-weight: bold;
+}
+.detail-modal .modal-body dl.detail-profile h3.record.fail {
+  color: #ddd;
+}
+.detail-modal .modal-body dl.detail-profile h3.record.fail:after {
+  content: "불합격";
+}
+.detail-modal .modal-body dl.detail-profile p.round {
+  border-radius: 10px;
+  background: #fff;
+  padding: 15px;
+}
+@media (min-width: 992px) {
+  .detail-modal .modal-body dl.detail-profile dt {
+    float: left;
+    font-size: 20px;
+  }
+  .detail-modal .modal-body dl.detail-profile dd {
+    margin-left: 190px;
+    font-size: 20px;
+  }
+  .detail-modal .modal-body dl.detail-profile span.grade {
+    font-size: 14px;
+  }
+  .detail-modal .modal-body dl.detail-profile h3.record {
+    font-size: 20px;
+  }
+  .detail-modal .modal-body dl.detail-profile p.round {
+    font-size: 16px;
+  }
+}
+
+
+.detail-modal .modal-body > section {
+  margin-bottom: 40px;
+}
+.detail-modal .modal-body > section div.title {
+  border-bottom: 1px solid #80c2c9;
+  margin-bottom: 20px;
+}
+.detail-modal .modal-body section div.title > h2 {
+  color: #80c2c9;
+  font-size: 25px;
+  margin: 0 0 10px 0;
+}
+
+.detail-modal ul.tabs {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.detail-modal ul.tabs > li {
+  float: left;
+  width: 33.33333333%;
+  padding: 5px 10px;
+}
+.detail-modal ul.tabs > li.long {
+  width: 50%;
+}
+@media (min-width: 992px) {
+  .detail-modal ul.tabs > li, 
+  .detail-modal ul.tabs > li.long {
+    width: 20%;
+  }
+}
+.detail-modal ul.tabs > li > a {
+  border: 1px solid #80c2c9;
+  border-radius: 20px;
+  width: 100%;
+  padding: 10px 0;
+  display: inline-block;
+  text-align: center;
+  color: #80c2c9;
+  font-size: 16px;
+}
+.detail-modal ul.tabs > li > a:hover, 
+.detail-modal ul.tabs > li.active > a {
+  background: #80c2c9;
+  color: #fff;
+}
+
+.detail-modal div.tab-content > div.tab {
+  display: none;
+  background: #80c2c9;
+  padding: 15px;
+  color: #fff;
+  min-height: 250px;
+}
+.detail-modal div.tab-content div.tab.active {
+  display: block;
+}
+
+.detail-modal div.tab div.part {
+  float: none;
+  padding: 15px;
+  border-bottom: 1px solid #ddd;
+  border-left: none;
+}
+.detail-modal div.tab div.part:last-child {
+  border-bottom: none;
+}
+@media (min-width: 992px) {
+  .detail-modal div.tab div.part {
+    float: left;
+    width: 33.3333333%;
+    border-left: 1px solid #ddd;
+    border-bottom: none;
+  }
+  .detail-modal div.tab div.part:first-child {
+    border-left: none;
+  }
+}
+.detail-modal div.tab .part > div.part-head {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.detail-modal div.tab .part > div.part-head > span {
+  border: 1px solid #fff;
+  border-radius: 15px;
+  color: #fff;
+  padding: 1px 10px;
+}
+.detail-modal div.tab .part > ul.part-body > li {
+  color: #fff;
+  margin-bottom: 10px;
+}
+.detail-modal div.tab .part > ul.part-body > li:before {
+  content: "-";
+  padding-right: 8px;
+}
