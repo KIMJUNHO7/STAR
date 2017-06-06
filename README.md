@@ -57,7 +57,7 @@
 
 ### 2. 서버 실행
 
-- python byul/manage.py runserver (django 테스트서버) 차후 nginx + gunicorn
+- python back/manage.py runserver (django 테스트서버) 차후 nginx + gunicorn
 
 
 # 기타 확인 사항 
