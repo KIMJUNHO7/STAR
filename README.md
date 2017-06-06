@@ -1,14 +1,15 @@
-별글, 별말
+# 별글, 별말
 ===
 별글, 별말_학생부종합전형 관리를 위한 학생-강사 매칭 서비스 플랫폼 개발
 
-#requirements
+
+## requirements
 
 - python 3.6.0+
 - postrgesql 9.0+
 - node(npm), bower, gulp
 
-# Front-end
+## Front-end
 
 ### 1. 설명
 
@@ -47,7 +48,7 @@
   3. `gulp build` dist 디렉토리에 배포용 소스 생성
   4. `bower install --save <package>` 따로 html에 입력할 필요없이 자동으로 vendor 생성
 
-# Back-end
+## Back-end
 
 ### 1. 환경 설정
 
@@ -60,7 +61,7 @@
 - python back/manage.py runserver (django 테스트서버) 차후 nginx + gunicorn
 
 
-# 기타 확인 사항 
+## 기타 확인 사항 
 
 ### 1. 깃 브랜치 전략
 - gitflow 전략(https://datasift.github.io/gitflow/IntroducingGitFlow.html)
