@@ -40,6 +40,10 @@ INSTALLED_APPS = [
     'rest_framework',
 
     'tutor',
+
+    # [FIXME] for dev
+    'django_extensions',
+
 ]
 
 MIDDLEWARE = [
