@@ -1,7 +1,9 @@
 # 별글, 별말
 
 별글, 별말_학생부종합전형 관리를 위한 학생-강사 매칭 서비스 플랫폼 개발
+![image](https://cloud.githubusercontent.com/assets/29164147/26825348/a11a48b0-4aef-11e7-94a0-339189f59c4f.png)
 
+# requirements
 
 ## requirements
 

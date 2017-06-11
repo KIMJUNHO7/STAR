@@ -1,6 +1,6 @@
 'use strict';
 
-(function() {
+$(document).ready(function() {
   
   window.addEventListener('resize',  onResize);
   
@@ -45,7 +45,11 @@
     openModal(modal);
     return false;
   });
-
+  $('#modal-wrap').on('click', '[data-modal]', function() {
+    var modal = $(this).attr('data-modal');
+    openModal(modal);
+    return false;
+  }); 
 })();
 
 /*********************** functions *************************/
@@ -113,7 +117,7 @@ function openModal(modal) {
     dataType: 'html',
     success: function(data) {
       $('body').addClass('active-mask');
-
+	  
       var $modal = $('#modal-wrap');
       $modal.html(data);
       $modal.addClass('active');
